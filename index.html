@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/estilos.css">
+</head>
+<body> 
+ 
+  <button>Mostrar Geometria :S</button>
+
+    <div class="cilindro">
+        <div class="box-cilindro">
+            <div class="lados border"><img src="IMG/fila-1-col-1.jpg" alt=""></div>
+            <div class="lados border"><img src="IMG/fila-1-col-2.jpg" alt=""></div>
+            <div class="lados border"><img src="IMG/fila-1-col-3.jpg" alt=""></div>
+            <div class="lados border"><img src="IMG/fila-1-col-4.jpg" alt=""></div>
+            <div class="lados border"><img src="IMG/fila-1-col-5.jpg" alt=""></div>
+            <div class="lados border"><img src="IMG/fila-1-col-6.jpg" alt=""></div>
+            <div class="lados border"><img src="IMG/fila-1-col-7.jpg" alt=""></div>
+            <div class="lados border"><img src="IMG/fila-1-col-8.jpg" alt=""></div>
+            <div class="lados border"><img src="IMG/fila-1-col-9.jpg" alt=""></div>
+            <div class="lados border"><img src="IMG/fila-1-col-10.jpg" alt=""></div>
+            <div class="lados border"><img src="IMG/fila-1-col-11.jpg" alt=""></div>
+            <div class="lados border"><img src="img/fila-1-col-12.jpg" alt=""></div>
+            <div class="lados border"><img src="img/fila-1-col-13.jpg" alt=""></div>
+            <div class="lados border"><img src="img/fila-1-col-14.jpg" alt=""></div>
+            <div class="lados border"><img src="img/fila-1-col-15.jpg" alt=""></div>
+            <div class="tapa tapa1 border">
+                <img src="IMG/TANQUEEE_COPIA2-removebg-preview.png" alt="">
+            </div>
+            <div class="tapa tapa2 border">
+                <img src="IMG/TANQUEEE_COPIA2-removebg-preview.png" alt="">
+            </div>
+        </div>
+       
+    </div>
+
+    <script>
+        let border=document.querySelectorAll('.border')
+        let boton=document.querySelector('button')
+
+        boton.addEventListener('click',()=>{
+            for(let index of border)
+            {
+                index.classList.toggle('bordes')
+            }
+        })
+
+
+    </script>
+</body>
+</html>

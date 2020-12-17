@@ -1,0 +1,183 @@
+body {
+  background: #666;
+  background: -webkit-gradient(linear, left top, left bottom, from(#222), color-stop(#222), to(#222));
+  background: linear-gradient(#222, #222, #222);
+}
+
+button {
+  padding: 10px;
+  background-color: #fff;
+  font-family: fantasy;
+  outline: none;
+  border: none;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.bordes {
+  border: 1px solid #15e003 !important;
+}
+
+.cilindro {
+  height: 170px;
+  width: 100px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin: 100px auto;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.cilindro .box-cilindro {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 5s;
+  transition: 5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: rotar 3s linear infinite;
+          animation: rotar 3s linear infinite;
+  will-change: auto;
+}
+
+.cilindro .box-cilindro .lados {
+  position: absolute;
+  left: 80px;
+  height: 180px;
+  width: 20px;
+}
+
+.cilindro .box-cilindro .lados img {
+  height: 100%;
+  width: 100%;
+}
+
+.cilindro .tapa {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+
+.cilindro .tapa img {
+  height: 100%;
+  width: 100%;
+}
+
+.cilindro .tapa1 {
+  -webkit-transform: rotateX(-90deg) translate(42px, 0px) translateZ(-3.1em);
+          transform: rotateX(-90deg) translate(42px, 0px) translateZ(-3.1em);
+}
+
+.cilindro .tapa2 {
+  -webkit-transform: rotateX(-90deg) translate(42px, 0px) translateZ(8em);
+          transform: rotateX(-90deg) translate(42px, 0px) translateZ(8em);
+}
+
+.lados:nth-child(1) {
+  -webkit-transform: rotateY(24deg) translateZ(46px);
+          transform: rotateY(24deg) translateZ(46px);
+}
+
+.lados:nth-child(2) {
+  -webkit-transform: rotateY(48deg) translateZ(46px);
+          transform: rotateY(48deg) translateZ(46px);
+}
+
+.lados:nth-child(3) {
+  -webkit-transform: rotateY(72deg) translateZ(46px);
+          transform: rotateY(72deg) translateZ(46px);
+}
+
+.lados:nth-child(4) {
+  -webkit-transform: rotateY(96deg) translateZ(46px);
+          transform: rotateY(96deg) translateZ(46px);
+}
+
+.lados:nth-child(5) {
+  -webkit-transform: rotateY(120deg) translateZ(46px);
+          transform: rotateY(120deg) translateZ(46px);
+}
+
+.lados:nth-child(6) {
+  -webkit-transform: rotateY(144deg) translateZ(46px);
+          transform: rotateY(144deg) translateZ(46px);
+}
+
+.lados:nth-child(7) {
+  -webkit-transform: rotateY(168deg) translateZ(46px);
+          transform: rotateY(168deg) translateZ(46px);
+}
+
+.lados:nth-child(8) {
+  -webkit-transform: rotateY(192deg) translateZ(46px);
+          transform: rotateY(192deg) translateZ(46px);
+}
+
+.lados:nth-child(9) {
+  -webkit-transform: rotateY(216deg) translateZ(46px);
+          transform: rotateY(216deg) translateZ(46px);
+}
+
+.lados:nth-child(10) {
+  -webkit-transform: rotateY(240deg) translateZ(46px);
+          transform: rotateY(240deg) translateZ(46px);
+}
+
+.lados:nth-child(11) {
+  -webkit-transform: rotateY(264deg) translateZ(46px);
+          transform: rotateY(264deg) translateZ(46px);
+}
+
+.lados:nth-child(12) {
+  -webkit-transform: rotateY(288deg) translateZ(46px);
+          transform: rotateY(288deg) translateZ(46px);
+}
+
+.lados:nth-child(13) {
+  -webkit-transform: rotateY(312deg) translateZ(46px);
+          transform: rotateY(312deg) translateZ(46px);
+}
+
+.lados:nth-child(14) {
+  -webkit-transform: rotateY(336deg) translateZ(46px);
+          transform: rotateY(336deg) translateZ(46px);
+}
+
+.lados:nth-child(15) {
+  -webkit-transform: rotateY(360deg) translateZ(46px);
+          transform: rotateY(360deg) translateZ(46px);
+}
+
+@-webkit-keyframes rotar {
+  0% {
+    -webkit-transform: rotateX(0) rotateY(0);
+            transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+            transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes rotar {
+  0% {
+    -webkit-transform: rotateX(0) rotateY(0);
+            transform: rotateX(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+            transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .cilindro {
+    margin: 50px auto;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
